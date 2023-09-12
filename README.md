@@ -10,10 +10,6 @@ Siga estas etapas simples para configurar e executar o projeto em sua máquina:
 
 Certifique-se de que você tenha o gerenciador de pacotes pnpm instalado em seu sistema. Se você não tiver, pode instalá-lo globalmente usando o seguinte comando:
 
-<div class="copy-code-button">
-  <button onclick="copyCode('npm install -g pnpm')">Copy code</button>
-</div>
-
 ```bash
 npm install -g pnpm
 ```
@@ -21,10 +17,6 @@ npm install -g pnpm
 ## Instalação ##
 
 1. Clone este repositório para sua máquina local:
-
-<div class="copy-code-button">
-  <button onclick="copyCode('git clone https://github.com/seu-usuario/upload-ai.git')">Copy code</button>
-</div>
 
 ```bash
 git clone https://github.com/seu-usuario/upload-ai.git
@@ -78,35 +70,3 @@ Agradecemos por escolher o Upload.AI para a transcrição de vídeos e geração
 Divirta-se criando conteúdo de qualidade com facilidade!
 
 Nota: Este README é uma descrição geral do projeto e pode ser personalizado conforme necessário para atender às especificações da sua aplicação e ao público-alvo.
-
-<script>
-  function copyCode(elementId) {
-    const codeElement = document.getElementById(elementId);
-    const textArea = document.createElement("textarea");
-    textArea.value = codeElement.textContent;
-    document.body.appendChild(textArea);
-    textArea.select();
-    document.execCommand("copy");
-    document.body.removeChild(textArea);
-    alert("Código copiado com sucesso!");
-  }
-</script>
-
-<style>
-  .copy-code-button {
-    width: 100%;
-    text-align: right;
-    display: inline-block;
-    position: relative;
-  }
-
-  button {
-    background-color: #0074d9;
-    border-radius: 4px;
-    font-size: 10px;
-    color: #fff;
-    border: none;
-    padding: 5px 10px;
-    cursor: pointer;
-  }
-</style>
