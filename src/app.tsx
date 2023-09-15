@@ -93,7 +93,14 @@ export function App() {
             <Separator />
 
             <div className="flex flex-col space-y-4">
-              <Label>Temperatura</Label>
+              <Label>
+                <div className="flex items-center justify-between">
+                  <span className="font-medium">Temperatura</span>{' '}
+                  <span className="text-xs text-zinc-500 dark:text-zinc-400">
+                    {temperature}
+                  </span>{' '}
+                </div>
+              </Label>
               <Slider
                 min={0}
                 max={1}
