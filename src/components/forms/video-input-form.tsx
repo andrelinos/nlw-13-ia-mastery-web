@@ -24,6 +24,7 @@ interface VideoInputFormProps {
 export function VideoInputForm(props: VideoInputFormProps) {
   const [videoFile, setVideoFile] = useState<File | null>(null);
   const [status, setStatus] = useState<Status>('waiting');
+  const [convertProgress, setConvertProgress] = useState(0);
 
   const promptInputRef = useRef<HTMLTextAreaElement>(null);
 
@@ -51,7 +52,7 @@ export function VideoInputForm(props: VideoInputFormProps) {
     // })
 
     ffmpeg.on('progress', (progress) => {
-      console.log('Convert progress: ' + Math.round(progress.progress * 100));
+      setConvertProgress(Math.round(progress.progress * 100));
     });
 
     await ffmpeg.exec([
@@ -174,7 +175,9 @@ export function VideoInputForm(props: VideoInputFormProps) {
             <Upload className="ml-2 h-4 w-4" />
           </>
         ) : (
-          statusMessages[status]
+          <>{`${statusMessages[status]} ${
+            status === 'converting' ? '(' + convertProgress + '%)' : ''
+          } `}</>
         )}
       </Button>
     </form>
