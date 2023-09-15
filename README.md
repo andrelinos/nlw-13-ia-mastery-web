@@ -1,3 +1,5 @@
+![alt imagem de capa](./.github/print-image.png)
+
 # Upload.AI - Transcrição de Vídeos e Geração de Conteúdo para o YouTube #
 
 O Upload.AI é uma aplicação inovadora que combina tecnologia de inteligência artificial com a facilidade de uso, permitindo que criadores de conteúdo gerem automaticamente títulos e descrições de vídeos para o YouTube a partir de transcrições de áudio. Este repositório contém as ferramentas e recursos necessários para começar a utilizar essa poderosa funcionalidade em seus próprios projetos.
@@ -19,7 +21,7 @@ npm install -g pnpm
 1. Clone este repositório para sua máquina local:
 
 ```bash
-git clone https://github.com/seu-usuario/upload-ai.git
+git clone https://github.com/andrelinos/nlw-13-ia-mastery-web.git
 ```
 
 2. Acesse o diretório do projeto:
@@ -68,5 +70,3 @@ Se você deseja contribuir para o desenvolvimento deste projeto, fique à vontad
 Agradecemos por escolher o Upload.AI para a transcrição de vídeos e geração de conteúdo para o YouTube. Esperamos que esta aplicação simplifique e melhore sua experiência como criador de conteúdo. Se tiver alguma dúvida ou precisar de assistência, não hesite em entrar em contato com nossa equipe de suporte.
 
 Divirta-se criando conteúdo de qualidade com facilidade!
-
-Nota: Este README é uma descrição geral do projeto e pode ser personalizado conforme necessário para atender às especificações da sua aplicação e ao público-alvo.
