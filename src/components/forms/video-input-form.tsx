@@ -126,13 +126,14 @@ export function VideoInputForm(props: VideoInputFormProps) {
     <form onSubmit={handleUploadVideo} className="space-y-6">
       <label
         htmlFor="video"
-        className="relative flex aspect-video cursor-pointer flex-col items-center justify-center gap-2 rounded-md border border-dashed text-sm text-muted-foreground hover:bg-primary/5"
+        className="relative flex aspect-video cursor-pointer flex-col items-center justify-center gap-2 overflow-hidden rounded-md border border-dashed text-sm text-muted-foreground hover:bg-primary/5"
       >
         {previewURL ? (
           <video
             src={previewURL}
             controls={false}
-            className="pointer-events-none absolute inset-0"
+            aspect-ratio="16/9"
+            className="pointer-events-none absolute inset-0 mx-auto max-h-[190px]"
           />
         ) : (
           <>
